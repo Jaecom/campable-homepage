@@ -17,11 +17,11 @@ const NavLink = ({ href, children, disableActive }: Props) => {
 	return (
 		<Link
 			className={`h-full ${
-				isActive && !disableActive ? "border-b-[2px] border-white border-solid font-bold" : "font-light"
-			} flex items-center uppercase font-dmSans text-[15px]`}
+				isActive ? "border-b-[2px] border-white border-solid font-bold" : "font-light"
+			} flex items-center`}
 			href={href}
 		>
-			{children}
+			<div className="uppercase tracking-[1.5px] font-dmSans text-[15px]">{children}</div>
 		</Link>
 	);
 };

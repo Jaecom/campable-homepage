@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${lora.variable} ${dmSans.variable} text-white`}>
-			<body>{children}</body>
+			<body className="bg-background">{children}</body>
 		</html>
 	);
 }
