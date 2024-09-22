@@ -4,7 +4,7 @@ import BrailleIcon from "@/public/icons/products_braille.svg";
 
 const page = () => {
 	return (
-		<div className="flex justify-center items-center mt-[130px]">
+		<div className="flex justify-center items-center mt-[60px] md:mt-[130px] px-[16px]">
 			<div className="flex flex-col items-center gap-y-[30px] max-w-[600px] text-center">
 				<H1>Products</H1>
 				<BrailleIcon />

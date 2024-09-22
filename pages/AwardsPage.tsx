@@ -5,15 +5,20 @@ import Image from "next/image";
 
 const AwardsPage = () => {
 	return (
-		<div className="bg-background">
-			<section className="border-y-[0.5px] border-solid border-white py-[40px] pl-[100px]">
-				<H1 className="">Awards</H1>
-				<p>
-					CampAble(구 해바라기팀)은 2023년 2월 연세대학교 공과대학교와 SK 행복나눔재단의 캡스톤 수업에서 시작된
-					팀입니다.
-				</p>
+		<div className="bg-background overflow-x-hidden">
+			<section className="flex border-y-[0.5px] border-solid border-white py-[40px] pl-[16px] md:pl-[100px] relative">
+				<div>
+					<H1 className="">Awards</H1>
+					<p>
+						CampAble(구 해바라기팀)은 2023년 2월 연세대학교 공과대학교와 SK 행복나눔재단의 캡스톤 수업에서 시작된
+						팀입니다.
+					</p>
+				</div>
+				<div className="md:hidden absolute bottom-[-70px] right-[-30px]">
+					<Image src="/images/awards_trophy.png" width={120} height={120} alt="trophy" style={{ objectFit: "cover" }} />
+				</div>
 			</section>
-			<section className="flex border-b-[0.5px] border-solid border-white py-[40px] pl-[100px]">
+			<section className="flex border-y-[0.5px] border-solid border-white py-[40px] pl-[16px] md:pl-[100px]">
 				<div>
 					<div>
 						<div className="flex items-end">
@@ -50,18 +55,21 @@ const AwardsPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex items-end">
+				<div className="hidden md:flex items-end">
 					<Image src="/images/awards_trophy.png" width={400} height={400} alt="trophy" style={{ objectFit: "cover" }} />
 				</div>
 			</section>
-			<section className="border-b-[0.5px] border-solid border-white py-[40px] pl-[100px]">
-				<H1 className="">Press Release</H1>
+			<section className="border-b-[0.5px] border-solid border-white py-[40px] pl-[100px] relative">
+				<H1>Press Release</H1>
+				<div className="md:hidden absolute right-[-100px] top-[-50px]">
+					<Image src="/images/awards_press.png" width={180} height={180} alt="press" style={{ objectFit: "cover" }} />
+				</div>
 			</section>
-			<section className="flex border-b-[0.5px] border-solid border-white py-[40px]">
-				<div className="flex items-start">
+			<section className="flex border-y-[0.5px] border-solid border-white py-[40px] pl-[16px] md:pl-[0px] ">
+				<div className="items-start hidden md:flex">
 					<Image src="/images/awards_press.png" width={400} height={400} alt="trophy" style={{ objectFit: "cover" }} />
 				</div>
-				<div className="border-solid border-l-[2px] border-primary  ml-[40px]">
+				<div className="border-solid border-l-[2px] border-primary">
 					<ul className="flex flex-col gap-y-[50px] ml-[20px]">
 						<li className="flex flex-col gap-y-[12px] max-w-[600px] break-keep">
 							<p className="font-extrabold">&lt;한경국립대, 제3회 장애·비장애 창업경진대회 개최&gt;</p>
