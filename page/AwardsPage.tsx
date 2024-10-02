@@ -30,8 +30,8 @@ const AwardsPage = () => {
 						</div>
 						<div className="border-solid border-l-[2px] border-primary translate-x-[9px]">
 							<ul className="flex flex-col gap-y-[10px] pt-[20px] ml-[20px]">
-								{awards_24.map((text: string) => (
-									<li>&#x2022; {text}</li>
+								{awards_24.map((text: string, index: number) => (
+									<li key={index}>&#x2022; {text}</li>
 								))}
 							</ul>
 						</div>
@@ -43,8 +43,8 @@ const AwardsPage = () => {
 						</div>
 						<div className="border-solid border-l-[2px] border-primary translate-x-[9px]">
 							<ul className="flex flex-col gap-y-[10px] pt-[20px] ml-[20px]">
-								{awards_23.map((text: string) => (
-									<li>&#x2022; {text}</li>
+								{awards_23.map((text: string, index: number) => (
+									<li key={index}>&#x2022; {text}</li>
 								))}
 							</ul>
 						</div>
@@ -67,20 +67,23 @@ const AwardsPage = () => {
 				<div className="border-solid border-l-[2px] border-primary">
 					<ul className="flex flex-col gap-y-[50px] ml-[20px]">
 						{press_releases.map(
-							({
-								title,
-								content,
-								source,
-								date,
-								url,
-							}: {
-								title: string;
-								content: string;
-								source: string;
-								date: string;
-								url: string;
-							}) => (
-								<li className="flex flex-col gap-y-[12px] max-w-[600px] break-keep">
+							(
+								{
+									title,
+									content,
+									source,
+									date,
+									url,
+								}: {
+									title: string;
+									content: string;
+									source: string;
+									date: string;
+									url: string;
+								},
+								index: number
+							) => (
+								<li key={index} className="flex flex-col gap-y-[12px] max-w-[600px] break-keep">
 									<p className="font-extrabold">&lt;{title}&gt;</p>
 									<p>{content}</p>
 									<a className="underline" href={url} target="_blank">
