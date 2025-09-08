@@ -9,42 +9,57 @@
 		"description": "Braille Camp is a braille transcription program specialized in mathematics, capable of transcribing not only text but also mathematical expressions. CampAble strives to quickly and easily transcribe educational materials for visually impaired students, increasing accessibility to more educational resources."
 	},
 	"AwardsPage": {
-		"description": "CampAble (formerly Sunflower Team) began in February 2023 as part of a capstone course at Yonsei University's College of Engineering and the SK Happiness Foundation.",
-		"awards": {
-			"2024": [
-				"Selected as SEF 2024 team for the Sustainable Development Goals Research Project organized by the Yonsei University Institute for Global Engagement (24.07.16~)",
-				"First Prize at the National Disabled and Non-Disabled College Students Startup Competition (Minister of Education Award) (24.02.01)",
-				"Best Award at the Yonsei University Higher Education Innovation Institute IHEI FESTA Performance Sharing Event (24.01.18)",
-				"Encouragement Award at the Yonsei University AI Convergence Idea Competition (24.01.11)"
-			],
-			"2023": [
-				"Second Prize at the International Capstone Design Fair (23.11.29)",
-				"Grand Prize at the 6th D-Tech Competition (EduTech Association President Award, Minister of Health and Welfare Award) (23.11.22)",
-				"Encouragement Award at the Creative Integrated Design Competition (23.11.02)",
-				"Best Award at the Yonsei University Maker Space Competition (23.09.04)",
-				"Excellence Award at the Sustainable Development Goals Video Campaign Contest (23.07.21)",
-				"Encouragement Award at the Yonsei University College of Engineering Course Performance Idea Competition (23.07.09)",
-				"Supported by SK SUNNY Happiness Foundation (23.02.13~23.12.31)"
-			]
-		},
+		"description": "CampAble(formerly Team Haebaragi) began in February 2023 as part of a capstone course at Yonsei University's College of Engineering and the SK Happiness Foundation.",
+		"awards": [
+			{
+				"year": "2025",
+				"list": [
+					"Open Source Release of the Mathematical Algorithm - [Github](https://github.com/campable-io/braille-camp) (2025.08.19)",
+					"Selected Team for the 2025 KOSCOM IT Startup Competition for People with Disabilities (2025.07.02)",
+					"Publication in the IGEE Proceedings Journal - [Journal Link](http://e-igee.org/journal/view.php?number=32) (2025.06.30)"
+				]
+			},
+			{
+				"year": "2024",
+				"list": [
+					"Final Selection for the Brian Impact Foundation ‘Side Impact’ Round 1 (24.11.04)",
+					"Selected as SEF 2024 team for the Sustainable Development Goals Research Project organized by the Yonsei University Institute for Global Engagement (24.07.16~)",
+					"First Prize at the National Disabled and Non-Disabled College Students Startup Competition (Minister of Education Award) (24.02.01)",
+					"Best Award at the Yonsei University Higher Education Innovation Institute IHEI FESTA Performance Sharing Event (24.01.18)",
+					"Encouragement Award at the Yonsei University AI Convergence Idea Competition (24.01.11)"
+				]
+			},
+			{
+				"year": "2023",
+				"list": [
+					"Second Prize at the International Capstone Design Fair (23.11.29)",
+					"Grand Prize at the 6th D-Tech Competition (EduTech Association President Award, Minister of Health and Welfare Award) (23.11.22)",
+					"Encouragement Award at the Creative Integrated Design Competition (23.11.02)",
+					"Best Award at the Yonsei University Makerspace i7 Competition (23.09.04)",
+					"Excellence Award at the Sustainable Development Goals Video Campaign Contest (23.07.21)",
+					"Encouragement Award at the Yonsei University College of Engineering Course Performance Idea Competition (23.07.09)",
+					"Supported by SK SUNNY Happiness Foundation (23.02.13~23.12.31)"
+				]
+			}
+		],
 		"press_releases": [
 			{
-				"title": "Hankyung National University Hosts 3rd Disabled and Non-Disabled Startup Competition",
-				"content": "On the final day of the event, teams presented their startup ideas developed over the three days, and the Sunflower Team emerged victorious. The Sunflower Team, composed of Yonsei University students, developed a software for quick and easy braille conversion of math textbooks for the visually impaired.",
+				"title": "Hankyong National University Hosts 3rd Disabled and Non-Disabled Startup Competition",
+				"content": "On the final day of the event, teams presented their startup ideas developed over the three days, and the Haebaragi Team emerged victorious. The Haebaragi Team, composed of Yonsei University students, developed a software for quick and easy braille conversion of math textbooks for the visually impaired.",
 				"source": "Gyeonggi News",
 				"date": "2024.02.05",
 				"url": "https://www.kgnews.co.kr/news/article.html?no=780907"
 			},
 			{
-				"title": "Yonsei Student Startup Team Wins Grand Prize at D-Tech Competition with Maker Space i7 Support",
-				"content": "The Sunflower Team, consisting entirely of Yonsei students, included a visually impaired team member as a developer. The team developed a program to address the lack of availability and high cost of braille textbooks for the visually impaired, aiming to improve their educational opportunities.",
+				"title": "Yonsei Student Startup Team Wins Grand Prize at D-Tech Competition with Makerspace i7 Support",
+				"content": "The Haebaragi Team, consisting entirely of Yonsei students, included a visually impaired team member as a developer. The team developed a program to address the lack of availability and high cost of braille textbooks for the visually impaired, aiming to improve their educational opportunities.",
 				"source": "Veritas Alpha",
 				"date": "2023.12.07",
 				"url": "https://www.veritas-a.com/news/articleView.html?idxno=485548"
 			},
 			{
-				"title": "Delight Law Firm D-Tech Competition... Grand Prize for 'Textbook Braille Conversion Software'",
-				"content": "Jung Juwon, leader of the Sunflower Team, stated, \"We will continue to work on developing various products to ensure that more learning materials are translated into braille. Our goal is to create more 'human-centered technologies' to apply the right technologies where they are needed the most.\"",
+				"title": "D'Light Law Firm D-Tech Competition... Grand Prize for 'Textbook Braille Conversion Software'",
+				"content": "Jung Juwon, leader of the Haebaragi Team, stated, \"We will continue to work on developing various products to ensure that more learning materials are translated into braille. Our goal is to create more 'human-centered technologies' to apply the right technologies where they are needed the most.\"",
 				"source": "Gyeonggi News",
 				"date": "2024.02.05",
 				"url": "https://www.hankyung.com/article/202311241857i"

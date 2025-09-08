@@ -1,14 +1,14 @@
-import H1 from "@/src/components/atoms/H1";
-import React from "react";
-import ListIcon from "@/public/icons/list_item_icon.svg";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import H1 from "@/src/components/atoms/H1"
+import React from "react"
+import ListIcon from "@/public/icons/list_item_icon.svg"
+import Image from "next/image"
+import { useTranslations } from "next-intl"
+import ReactMarkdown from "react-markdown"
 
 const AwardsPage = () => {
-	const t = useTranslations("AwardsPage");
-	const awards_24 = t.raw("awards.2024");
-	const awards_23 = t.raw("awards.2023");
-	const press_releases = t.raw("press_releases");
+	const t = useTranslations("AwardsPage")
+	const awards = t.raw("awards")
+	const press_releases = t.raw("press_releases")
 
 	return (
 		<div className="bg-background overflow-x-hidden">
@@ -23,32 +23,32 @@ const AwardsPage = () => {
 			</section>
 			<section className="flex border-y-[0.5px] border-solid border-white py-[40px] pl-[16px] md:pl-[100px]">
 				<div>
-					<div>
-						<div className="flex items-end">
-							<ListIcon />
-							<p className="text-primary font-dmSans text-[40px] translate-y-[25%] ml-[10px]">2024</p>
+					{awards.map((award: any) => (
+						<div>
+							<div className="flex items-end">
+								<ListIcon />
+								<p className="text-primary font-dmSans text-[40px] translate-y-[25%] ml-[10px]">{award.year}</p>
+							</div>
+							<div className="border-solid border-l-[2px] border-primary translate-x-[9px]">
+								<ul className="flex flex-col gap-y-[10px] pt-[20px] ml-[20px]">
+									{award.list.map((text: string, index: number) => (
+										<li key={index} className="flex gap-x-1">
+											&#x2022;
+											<ReactMarkdown
+												components={{
+													a: ({ node, ...props }) => (
+														<a {...props} className="underline" target="_blank" rel="noopener noreferrer" />
+													),
+												}}
+											>
+												{text}
+											</ReactMarkdown>
+										</li>
+									))}
+								</ul>
+							</div>
 						</div>
-						<div className="border-solid border-l-[2px] border-primary translate-x-[9px]">
-							<ul className="flex flex-col gap-y-[10px] pt-[20px] ml-[20px]">
-								{awards_24.map((text: string, index: number) => (
-									<li key={index}>&#x2022; {text}</li>
-								))}
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div className="flex items-end">
-							<ListIcon />
-							<p className="text-primary font-dmSans text-[40px] translate-y-[25%] ml-[10px]">2023</p>
-						</div>
-						<div className="border-solid border-l-[2px] border-primary translate-x-[9px]">
-							<ul className="flex flex-col gap-y-[10px] pt-[20px] ml-[20px]">
-								{awards_23.map((text: string, index: number) => (
-									<li key={index}>&#x2022; {text}</li>
-								))}
-							</ul>
-						</div>
-					</div>
+					))}
 				</div>
 				<div className="hidden md:flex items-end">
 					<Image src="/images/awards_trophy.png" width={400} height={400} alt="trophy" style={{ objectFit: "cover" }} />
@@ -75,11 +75,11 @@ const AwardsPage = () => {
 									date,
 									url,
 								}: {
-									title: string;
-									content: string;
-									source: string;
-									date: string;
-									url: string;
+									title: string
+									content: string
+									source: string
+									date: string
+									url: string
 								},
 								index: number
 							) => (
@@ -96,7 +96,7 @@ const AwardsPage = () => {
 				</div>
 			</section>
 		</div>
-	);
-};
+	)
+}
 
-export default AwardsPage;
+export default AwardsPage
